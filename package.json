@@ -3,6 +3,7 @@
   "version": "1.3.6",
   "description": "WebRTC signalling using Cloudflare Workers",
   "main": "src/p2pcf.js",
+  "browser": "dist/p2pcf.js",
   "scripts": {
     "build": "esbuild src/p2pcf.js --define:global=window --format=esm --bundle --outfile=dist/p2pcf.js",
     "build:min": "esbuild src/p2pcf.js --minify --define:global=window --bundle --outfile=dist/p2pcf.min.js",
